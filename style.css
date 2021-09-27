@@ -1,0 +1,60 @@
+body {
+    background-image: url("images/bg-intro-mobile.png");
+    background-color: hsl(0, 100%, 74%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+        background-image: url("images/bg-intro-desktop.png");
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    main {
+        flex-direction: row;
+    }
+}
+
+/* Copy Styles */
+
+#copy h1, #copy p {
+    color: white;
+}
+
+/* Form Styles */
+
+button {
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+}
+
+form {
+    background: white;
+    max-width: 80%;
+}
+
+input {
+    display: block;
+}
+
+input:focus {
+    border: 2px solid hsl(248, 32%, 49%);
+}
+
+#submit {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+}
+
+#terms {
+    color: hsl(0, 100%, 74%);
+}
