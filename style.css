@@ -6,6 +6,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 a {
@@ -24,26 +25,61 @@ a {
     }
 }
 
+@media only screen and (min-width: 375px) {
+    .half {
+        width: 50%;
+    }
+}
+
 /* Copy Styles */
 
-#copy h1, #copy p {
+#copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#copy * {
     color: white;
+    text-align: center;
+
+}
+
+#copy h1 {
+    
 }
 
 /* Form Styles */
 
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+button, form {
+    width: 90%;
+    margin: 0 auto;
+}
+
 button {
     background-color: hsl(248, 32%, 49%);
     color: white;
+    padding: 5% 20%;
+    line-height: 1.5rem;
 }
 
 form {
     background: white;
-    max-width: 80%;
+    border-radius: 7px;
+    margin-top: 1rem;
 }
 
 input {
     display: block;
+    width: 85%;
+    height: 2rem;
+    margin: 1rem auto;
+    border: 1px solid hsl(246, 25%, 77%);
 }
 
 input:focus {
@@ -55,6 +91,20 @@ input:focus {
     color: white;
 }
 
+form p {
+    margin: 1rem 2rem;
+    font-size: .8rem;
+    text-align: center;
+    line-height: 1rem;
+    color: grey;
+}
+
 #terms {
     color: hsl(0, 100%, 74%);
+}
+
+/* Footer Styles */
+
+footer {
+    
 }
