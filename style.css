@@ -5,34 +5,37 @@
 body {
     background-image: url("images/bg-intro-mobile.png");
     background-color: hsl(0, 100%, 74%);
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 90%;
     max-width: 1000px;
-    margin: 10vh auto;
+    margin: 10vh auto 15vh;
+    position: relative;
 }
 
 a {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 575px) {
     body {
         background-image: url("images/bg-intro-desktop.png");
     }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 575px) {
     main {
         flex-direction: row;
+        margin-top: 10%;
     }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 575px) {
     .half {
         width: 50%;
     }
@@ -44,6 +47,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 #copy * {
@@ -51,14 +56,14 @@ a {
     text-align: center;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 575px) {
     #copy * {
         text-align: left;
     }
 }
 
 #copy h1 {
-    font-size: 5.5vh;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 3rem;
@@ -67,6 +72,7 @@ a {
 #copy p {
     font-size: 16px;
     margin-bottom: 3rem;
+    line-height: 2rem;
 }
 
 /* Form Styles */
@@ -74,6 +80,7 @@ a {
 #form {
     display: flex;
     flex-direction: column;
+    justify-content: center;;
 }
 
 button, form {
@@ -91,19 +98,22 @@ button {
 }
 
 form {
-    background: white;
+    background-color: white;
     border-radius: 7px;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input {
     display: block;
     width: 80%;
     height: 2rem;
-    margin: 1rem auto;
+    margin: 1rem 1rem 0;
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 4px;
-    padding: 5px 0px 5px 25px;
+    padding: 5px 15px;
     font-size: 12px;
     font-weight: 700;
     color: gray;
@@ -113,23 +123,23 @@ input:focus {
     border: 2px solid hsl(248, 32%, 49%);
 }
 
-/* fix word wrap for submit button */
-
 #submit {
     background-color: hsl(154, 59%, 51%);
     color: white;
     text-transform: uppercase;
-    text-align: center;
+    text-align: match-parent;
     font-weight: 400;
     letter-spacing: 1px;
+    box-sizing: content-box;
+    white-space: normal;
 }
 
 form p {
-    margin: 1rem 2rem;
-    font-size: .8rem;
+    margin: 1rem 2rem 2rem;
+    font-size: .6rem;
     text-align: center;
     line-height: 1rem;
-    color: grey;
+    color: hsl(248, 0%, 70%);
 }
 
 #terms {
@@ -137,7 +147,7 @@ form p {
 }
 
 /* Footer Styles */
-
 footer {
-    margin-top: 10%;
+    position: relative;
+    bottom: 0;
 }
