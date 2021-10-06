@@ -47,8 +47,9 @@ a {text-decoration: none;}
 }
 
 #copy * {
-    color: white;
     text-align: center;
+
+    color: white;
 }
 
 @media only screen and (min-width: 575px) {
@@ -84,34 +85,37 @@ button, form {
 }
 
 button {
-    background-color: hsl(248, 32%, 49%);
-    color: white;
-    padding: 3% 15%;
-    line-height: 1.5rem;
     border: none;
     border-radius: 7px;
+    padding: 3% 15%;
+
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    line-height: 1.5rem;
 }
 
 form {
-    background-color: white;
+    align-items: center;
     border-radius: 7px;
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 1rem;
+    
+    background-color: white;
 }
 
 input {
-    display: block;
-    width: 80%;
-    height: 2rem;
-    margin: 1rem 1rem 0;
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 4px;
+    display: block;
+    height: 2rem;
+    margin: 1rem 1rem 0;
     padding: 5px 15px;
+    width: 80%;
+    
+    color: gray;
     font-size: 12px;
     font-weight: 700;
-    color: gray;
 }
 
 input:focus {
@@ -119,22 +123,24 @@ input:focus {
 }
 
 #submit {
+    box-sizing: content-box;
+    white-space: normal;
+
     background-color: hsl(154, 59%, 51%);
     color: white;
     text-transform: uppercase;
     text-align: match-parent;
     font-weight: 400;
     letter-spacing: 1px;
-    box-sizing: content-box;
-    white-space: normal;
 }
 
 form p {
     margin: 1rem 2rem 2rem;
-    font-size: .6rem;
-    text-align: center;
-    line-height: 1rem;
+    
     color: hsl(248, 0%, 70%);
+    font-size: .6rem;
+    line-height: 1rem;
+    text-align: center;
 }
 
 #terms {
@@ -143,6 +149,6 @@ form p {
 
 /* Footer Styles */
 footer {
-    position: relative;
     bottom: 0;
+    position: relative;
 }
