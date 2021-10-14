@@ -116,11 +116,15 @@ input {
     color: gray;
     font-size: 12px;
     font-weight: 700;
-}
+};
 
 input:focus {
     border: 2px solid hsl(248, 32%, 49%);
 }
+
+/* input:invalid {
+    border: 2px solid hsl(0, 100%, 74%);
+} */
 
 #submit {
     box-sizing: content-box;
